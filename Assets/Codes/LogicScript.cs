@@ -10,6 +10,8 @@ public class LogicScript : MonoBehaviour
     [SerializeField] private int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
+    [SerializeField] private int playerCoins; // New variable to track coins
+    public Text coinText; // Text UI element to display coins
     AudioManager audioManager;
 
     private void Awake()
@@ -46,6 +48,13 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
        gameOverScreen.SetActive(true);
+    }
+
+   public void addCoin(int coinToAdd)
+    {
+        playerCoins += coinToAdd;
+        coinText.text = playerCoins.ToString(); // Update the UI to show the number of collected coins
+        audioManager.PlaySFX(audioManager.coin); // Assuming you have a coin sound effect in your AudioManager
     }
 
 }
