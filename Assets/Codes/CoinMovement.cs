@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinMovement : MonoBehaviour
 {
-     public float fallSpeed = 2f;
+    public float fallSpeed = 2f;
     private float bottomY = -5f; // Adjust this value according to your scene
 
     void Update()

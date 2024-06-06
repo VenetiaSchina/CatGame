@@ -201,6 +201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 4268661334018789759, guid: c580157451b399c4a9937dd5ac8738dd, type: 3}
   spawnRate: 5
+  minX: -3
+  maxX: 3
   minY: 3
   maxY: 6
 --- !u!4 &181091046
